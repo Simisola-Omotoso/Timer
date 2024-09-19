@@ -1,43 +1,43 @@
 body {
-    font-family: Times New Roman, serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    background-color: #1D1D1D;
-  }
+  font-family: Times New Roman, serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #1D1D1D;
+}
   
-  #timer {
-    font-size: 48px;
-    background-color: #DED6D2;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-top: 20px;
-  }
+#timer {
+  font-size: 48px;
+  background-color: #DED6D2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
   
-  input {
-    font-size: 16px;
-    padding: 10px;
-    margin: 5px;
-    width: 60px;
-    text-align: center;
-    background-color: #DED6D2;
-    font-family: Times New Roman, serif;
-  }
+input {
+  font-size: 16px;
+  padding: 10px;
+  margin: 5px;
+  width: 60px;
+  text-align: center;
+  background-color: #DED6D2;
+  font-family: Times New Roman, serif;
+}
   
-  button {
-    padding: 10px 20px;
-    background-color: #4A056F;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 5px;
-  }
+button {
+  padding: 10px 20px;
+  background-color: #4A056F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+}
   
-  button.pause {
-    background-color: #123D04;
-  }
+button.pause {
+  background-color: #123D04;
+}
