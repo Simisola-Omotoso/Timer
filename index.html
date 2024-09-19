@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+</head>
+<body>
+  <div>
+    <input id="hours" type="number" min="0" placeholder="HH" /> :
+    <input id="minutes" type="number" min="0" max="59" placeholder="MM" /> :
+    <input id="seconds" type="number" min="0" max="59" placeholder="SS" />
+    <button onclick="setTimer()">Start Timer</button>
+    <button class="pause" onclick="pauseTimer()">Pause Timer</button>
+  </div>
+  
+  <div id="timer">00:00:00</div>
+  
+  <!-- Audio element to play sound -->
+  <audio id="alarm-sound" src="https://raw.githubusercontent.com/Simisola-Omotoso/Alarm-Sound/main/sounds/alarm-clock-short-6402.mp3" preload="auto"></audio>
+</body>
+</html>
