@@ -57,3 +57,12 @@ function playSound() {
   const sound = document.getElementById("alarm-sound");
   sound.play();
 }
+
+// Web Push Notifications
+if (Notification.permission === 'granted') {
+  new Notification('Time’s up!', {
+      body: 'Time is up.',
+      icon: 'images/purple-clock-icon.jpeg',
+      sound: 'audio/alarm-clock-short-6402.mp3' // Add sound if supported
+  });
+}
