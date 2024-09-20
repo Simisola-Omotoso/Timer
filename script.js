@@ -66,3 +66,10 @@ if (Notification.permission === 'granted') {
       sound: 'audio/alarm-clock-short-6402.mp3' // Add sound if supported
   });
 }
+
+// Sending Signal to JSON File
+function sendSignal() {
+  fetch('https://simisola-omotoso.github.io/Timer/signal.json', {
+      method: 'GET'
+  });
+}
