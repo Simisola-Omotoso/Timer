@@ -59,12 +59,36 @@ function playSound() {
 }
 
 // Web Push Notifications
-if (Notification.permission === 'granted') {
-  new Notification('Time’s up!', {
-      body: 'Time is up.',
-      icon: 'images/purple-clock-icon.jpeg',
-      sound: 'audio/alarm-clock-short-6402.mp3' // Add sound if supported
+
+if (Notification.permission === 'default') {
+  Notification.requestPermission().then(permission => {
+    if (permission === 'granted') {
+      console.log("Notification permission granted.");
+    } else {
+      console.log("Notification permission denied.");
+    }
   });
+}
+
+function showNotification() {
+  if (Notification.permission === 'granted') {
+    new Notification('Time’s up!', {
+        body: 'Time is up.',
+        icon: 'images/purple-clock-icon.jpeg',
+        sound: 'audio/alarm-clock-short-6402.mp3' // Add sound if supported
+    });
+  }
+}
+
+// When timer ends
+if (timeRemaining <= 0) {
+  showNotification();  // This will be called when the timer finishes
+}
+
+window.onload = () => {
+  if (Notification.permission === 'default') {
+    Notification.requestPermission();
+  }
 }
 
 // Sending Signal to JSON File
